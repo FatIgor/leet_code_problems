@@ -1,4 +1,4 @@
-class q34_find_element:
+class q0034_find_element:
     def search(self, nums, target):
         min = 0
         max = len(nums) - 1

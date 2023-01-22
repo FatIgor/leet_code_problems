@@ -1,4 +1,4 @@
-class q27_remove_element:
+class q0027_remove_element:
     def remove(self, nums, val):
         count = len(nums)
         index1 = 0
@@ -14,9 +14,23 @@ class q27_remove_element:
             index1 += 1
         if len(nums) > 0 and nums[0] == val:
             count = 0
-        string = ''
-        for item in nums:
-            string = string + str(item) + ' '
-        print(string)
-        print(count)
         return count
+
+    def tests(self):
+        print(self.__class__.__name__)
+        nums = [3, 2, 2, 3]
+        val = 3
+        print(nums,val)
+        print(self.remove(nums, val))
+        nums = [0, 1, 2, 2, 3, 0, 4, 2]
+        val = 2
+        print(nums,val)
+        print(self.remove(nums, val))
+        nums = [1]
+        val = 1
+        print(nums,val)
+        print(self.remove(nums, val))
+        nums = [4, 5]
+        val = 5
+        print(nums,val)
+        print(self.remove(nums, val))
