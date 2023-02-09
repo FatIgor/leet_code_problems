@@ -6,7 +6,11 @@ from q0034_find_element import q0034_find_element
 from q0151_reverse_words_in_a_string import q0151_reverse_words_in_a_string
 from q0191_number_of_1_bits import q0191_number_of_1_bits
 from q0202_happy_number import q0202_happy_number
+from q0283_move_zeroes import q0283_move_zeroes
+from q0496_next_greater_element_i import q0496_next_greater_element_i
+from q0589_nary_tree import q0589_nary_tree
 from q0976_triangle_perimeter import q0976_triangle_perimeter
+from q1213_check_straight_line import q1213_check_straight_line
 from q1281_sub_prod_and_sum import q1281_sub_prod_and_sum
 from q1491_average_salary import q1491_average_salary
 from q1502_arithmetic_progression import q1502_arithmetic_progression
@@ -18,6 +22,7 @@ from first_missing_positive import first_missing_positive
 from longest_pal_sub import longest_pal_sub
 from my_atoi import my_atoi
 from nth_digit import nth_digit
+from q1588_array_sum import q1588_array_sum
 from q1779_nearest_point import q1779_nearest_point
 from q1790_string_swap import q1790_string_swap
 from q1822_sign import q1822_sign
@@ -28,13 +33,13 @@ from water_and_jug import water_and_jug
 from wildcard_matching import wildcard_matching
 
 problem_list = [q0027_remove_element, q0034_find_element, q0151_reverse_words_in_a_string, q0191_number_of_1_bits,
-                q0202_happy_number, q0976_triangle_perimeter, q1502_arithmetic_progression,
-                q1779_nearest_point, q1790_string_swap, q1822_sign,
-                q1281_sub_prod_and_sum, q1491_average_salary, q1523_count_odd_numbers, BasicCalculator, common_prefix,
-                euler_problem_373, first_missing_positive, longest_pal_sub, my_atoi, nth_digit, roman_to_decimal,
-                sudoku_1, challenge_1, water_and_jug, wildcard_matching]
+                q0202_happy_number, q0283_move_zeroes, q0496_next_greater_element_i, q0589_nary_tree, q0976_triangle_perimeter,
+                q1213_check_straight_line, q1502_arithmetic_progression, q1588_array_sum, q1779_nearest_point, q1790_string_swap,
+                q1822_sign, q1281_sub_prod_and_sum, q1491_average_salary, q1523_count_odd_numbers, BasicCalculator,
+                common_prefix, euler_problem_373, first_missing_positive, longest_pal_sub, my_atoi, nth_digit,
+                roman_to_decimal, sudoku_1, challenge_1, water_and_jug, wildcard_matching]
 
-run_these = [1790]
+run_these = [283]
 
 for n in run_these:
     num = str(n)
