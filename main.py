@@ -3,6 +3,7 @@ import time
 
 from q0027_remove_element import q0027_remove_element
 from q0034_find_element import q0034_find_element
+from q0037_sudoku_solver import q0037_sudoku_solver
 from q0151_reverse_words_in_a_string import q0151_reverse_words_in_a_string
 from q0191_number_of_1_bits import q0191_number_of_1_bits
 from q0202_happy_number import q0202_happy_number
@@ -32,14 +33,14 @@ from two_sum import challenge_1
 from water_and_jug import water_and_jug
 from wildcard_matching import wildcard_matching
 
-problem_list = [q0027_remove_element, q0034_find_element, q0151_reverse_words_in_a_string, q0191_number_of_1_bits,
+problem_list = [q0027_remove_element, q0034_find_element, q0037_sudoku_solver, q0151_reverse_words_in_a_string, q0191_number_of_1_bits,
                 q0202_happy_number, q0283_move_zeroes, q0496_next_greater_element_i, q0589_nary_tree, q0976_triangle_perimeter,
                 q1213_check_straight_line, q1502_arithmetic_progression, q1588_array_sum, q1779_nearest_point, q1790_string_swap,
                 q1822_sign, q1281_sub_prod_and_sum, q1491_average_salary, q1523_count_odd_numbers, BasicCalculator,
                 common_prefix, euler_problem_373, first_missing_positive, longest_pal_sub, my_atoi, nth_digit,
                 roman_to_decimal, sudoku_1, challenge_1, water_and_jug, wildcard_matching]
 
-run_these = [283]
+run_these = ['q0037']
 
 for n in run_these:
     num = str(n)
