@@ -2,7 +2,8 @@ from typing import List
 
 
 class sudoku_1:
-    offsets = [0, 0, 1, 0, 2, 0, 0, 1, 1, 1, 2, 1, 0, 2, 1, 2, 2, 2]
+    def __init__(self):
+        self.offsets = [0, 0, 1, 0, 2, 0, 0, 1, 1, 1, 2, 1, 0, 2, 1, 2, 2, 2]
 
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         if not self.check_lines(board):
