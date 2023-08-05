@@ -1,6 +1,14 @@
 import datetime
-import time
 
+from q6913_longest_alternating_subarray import q6913_longest_alternating_subarray
+from q6469_relocate_marbles import q6469_relocate_marbles
+from basiccalculator import BasicCalculator
+from common_prefix import common_prefix
+from euler_problem_373 import euler_problem_373
+from first_missing_positive import first_missing_positive
+from longest_pal_sub import longest_pal_sub
+from my_atoi import my_atoi
+from nth_digit import nth_digit
 from q0027_remove_element import q0027_remove_element
 from q0034_find_element import q0034_find_element
 from q0037_sudoku_solver import q0037_sudoku_solver
@@ -16,31 +24,42 @@ from q1281_sub_prod_and_sum import q1281_sub_prod_and_sum
 from q1491_average_salary import q1491_average_salary
 from q1502_arithmetic_progression import q1502_arithmetic_progression
 from q1523_count_odd_numbers import q1523_count_odd_numbers
-from basiccalculator import BasicCalculator
-from common_prefix import common_prefix
-from euler_problem_373 import euler_problem_373
-from first_missing_positive import first_missing_positive
-from longest_pal_sub import longest_pal_sub
-from my_atoi import my_atoi
-from nth_digit import nth_digit
 from q1588_array_sum import q1588_array_sum
 from q1779_nearest_point import q1779_nearest_point
 from q1790_string_swap import q1790_string_swap
 from q1822_sign import q1822_sign
+from q6333_find_column_width import q6333_find_column_width
+from q6334_find_score_prefixes_array import q6334_find_score_prefixes_array
+from q6366_old_people import q6366_old_people
+from q6367_sum_in_a_matrix import q6367_sum_in_a_matrix
+from q6393_max_strength import q6393_max_strength
+from q6395_buy_two_chocolates import q6395_buy_two_chocolates
+from q6425_semi_rep import q6425_semi_rep
+from q6426_robots import q6426_robots
+from q6461_is_fascinating import q6461_is_fascinating
 from roman_to_decimal import roman_to_decimal
 from sudoku_validation import sudoku_1
 from two_sum import challenge_1
 from water_and_jug import water_and_jug
 from wildcard_matching import wildcard_matching
 
-problem_list = [q0027_remove_element, q0034_find_element, q0037_sudoku_solver, q0151_reverse_words_in_a_string, q0191_number_of_1_bits,
-                q0202_happy_number, q0283_move_zeroes, q0496_next_greater_element_i, q0589_nary_tree, q0976_triangle_perimeter,
-                q1213_check_straight_line, q1502_arithmetic_progression, q1588_array_sum, q1779_nearest_point, q1790_string_swap,
+problem_list = [q0027_remove_element, q0034_find_element, q0037_sudoku_solver, q0151_reverse_words_in_a_string,
+                q0191_number_of_1_bits,
+                q0202_happy_number, q0283_move_zeroes, q0496_next_greater_element_i, q0589_nary_tree,
+                q0976_triangle_perimeter,
+                q1213_check_straight_line, q1502_arithmetic_progression, q1588_array_sum, q1779_nearest_point,
+                q1790_string_swap,
                 q1822_sign, q1281_sub_prod_and_sum, q1491_average_salary, q1523_count_odd_numbers, BasicCalculator,
                 common_prefix, euler_problem_373, first_missing_positive, longest_pal_sub, my_atoi, nth_digit,
-                roman_to_decimal, sudoku_1, challenge_1, water_and_jug, wildcard_matching]
+                roman_to_decimal, sudoku_1, challenge_1, water_and_jug, wildcard_matching,
+                q6333_find_column_width, q6334_find_score_prefixes_array, q6366_old_people, q6367_sum_in_a_matrix,
+                q6395_buy_two_chocolates, q6393_max_strength, q6461_is_fascinating, q6425_semi_rep, q6426_robots,
+                q6469_relocate_marbles,
+                q6913_longest_alternating_subarray]
 
-run_these = ['q0037']
+run_these = ['q6469']
+
+
 
 for n in run_these:
     num = str(n)
@@ -51,8 +70,8 @@ for n in run_these:
             problem.tests()
             et = datetime.datetime.now()
             td = et - st
-            execution_time = td.microseconds / 1000
-            print('Execution time: ', execution_time, ' milliseconds')
+            print(td)
+            print('Execution time: ', td)
 exit()
 
 rem = q0027_remove_element()
